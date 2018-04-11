@@ -1,0 +1,60 @@
+<!--Joshua Fernandes, Goa University, 1615, WebTech Assignment 1 -->
+<html>
+	<head>
+		<title>Chain Reaction-Version 2</title>
+		 <link rel="stylesheet" href="style.css">
+		 <script src="script.js"></script>
+		<link rel="icon" type="image/ico" href="data:;base64,iVBORw0KGgo=demo_icon.ico">
+	</head>
+	
+<body >
+	<div id="sidebar">
+		<div id="titlebar"><img src="images/logo.png">Chain Reaction</div>
+			<p>Chain reaction is a strategy game for two players.
+				The objective of chain reaction is to take control
+				of the board by eliminating opponent's orbs.</p>
+			<p>Players take it in turns to place their orbs in a
+				cell.Once a cell has reached critical number of
+				orbs,they explode into the surrounding cells
+				adding an extra orb and claiming the cell for the
+				player.
+				Players may only place their orbs in a blank cell
+				or a cell that contains orbs of their own colour.As
+				soon as a player loses all his orbs is out of the
+				game.</p>
+
+			<p id="input">Select Players:    <select id="player" >
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			  <option value="6">6</option>
+			  <option value="7">7</option>
+			  <option value="8">8</option>
+			</select></p>
+			<p id="input">Enter Grid Size: <input type="text" id="gridsize" width="160px"></input></p>
+			<p><button id="playButton" type="button" onClick="createGrid()"><span >PLAY</span></button></p>
+			<p>Developed by: <span >Joshua Fernandes</span><br> Date Created: <span >21/02/2018</span><br>Date Modified: <span >07/04/2018</span></p>
+	</div>
+
+	<div id="container">
+		<div id="title">
+			<span class="xx" >Player 1:<img class="p" src="images/Obj-0-1.gif"></span>
+			Chain Reaction 
+			<span class="xx">Player 2:<img class="p" src="images/Obj-1-1.gif"></span>
+		</div>
+			<div id="box" onClick="startFunction(event)">
+			</div>
+	</div>
+	
+	<audio id="myAudio">
+	  <source src="sound/pop.mp3" type="audio/mp3">
+	</audio>
+	<audio id="gameOver">
+	  <source src="sound/game_over.mp3" type="audio/mp3">
+	</audio>
+	
+
+</body>
+
+</html>
